@@ -1,0 +1,21 @@
+@import url('../../style/index.less');
+@color:#666;
+.test(@w,@h){
+    width:unit(@w,px);
+    height:unit(@h,px)
+}
+.less{
+    .test(200,30);
+    background:@color;
+    h3{
+        color: pink;
+    }
+}
+.son1{
+    .test(40,50);
+    background:@bgcolor;
+}
+.son2{
+    .test(50,54);
+    background: @color*2;
+}
